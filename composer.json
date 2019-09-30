@@ -1,0 +1,27 @@
+{
+    "name": "prokhonenkov/yii2-repeater",
+    "description": "The html prser",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Vitaliy Prokhonenkov",
+        "email": "prokhonenkov@gmail.com"
+      }
+    ],
+    "keywords": [
+      "yii2",
+      "extension",
+      "sitemap"
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "php": ">=7.1",
+      "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "prokhonenkov\\repeater\\": "src"
+      }
+    }
+}
