@@ -39,7 +39,8 @@ return [
 
 ```
 
-##Usage
+Usage
+-------------
 ![Single column example](./resources/presentation.gif?raw=true)
 
 -----
