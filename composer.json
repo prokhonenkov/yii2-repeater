@@ -1,6 +1,6 @@
 {
     "name": "prokhonenkov/yii2-repeater",
-    "description": "The html prser",
+    "description": "The html repeater",
     "type": "yii2-extension",
     "license": "MIT",
     "authors": [
@@ -12,7 +12,7 @@
     "keywords": [
       "yii2",
       "extension",
-      "sitemap"
+      "repeater"
     ],
     "minimum-stability": "stable",
     "require": {
