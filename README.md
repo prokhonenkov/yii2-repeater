@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require prokhonenkov/yii2-repeater
+php composer.phar require prokhonenkov/yii2-repeater:dev-master 
 ```
 
 or add
 
 ```
-"prokhonenkov/yii2-repeater": "*"
+"prokhonenkov/yii2-repeater": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
