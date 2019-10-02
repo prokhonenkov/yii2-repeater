@@ -35,6 +35,9 @@ return [
         'repeater'=> [
             'class' => \prokhonenkov\repeater\Repeater::class
         ],
+    ],
+    'bootstrap' => [        
+        'repeater' // add module id to bootstrap for proper aliases and url routes binding
     ]
 
 ```
