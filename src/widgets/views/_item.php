@@ -16,7 +16,8 @@
 		<?= $this->render($modelView, [
             'model' => $model,
             'id' => $id,
-            'additionalData' => $additionalData
+            'additionalData' => $additionalData,
+			'form' => $form
 		]);?>
 	</div>
 </div>
