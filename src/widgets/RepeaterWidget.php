@@ -73,7 +73,8 @@ class RepeaterWidget extends Widget
 			'models' => $this->models,
 			'modelView' => $this->modelView,
 			'prefix' => $this->prefix,
-			'additionalData' => $this->additionalData
+			'additionalData' => $this->additionalData,
+			'form' => $this->form
 		]);
 	}
 }
