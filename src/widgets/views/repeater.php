@@ -22,7 +22,8 @@
                 'model' => $model,
                 'modelView' => $modelView,
                 'id' => $index,
-                'additionalData' => $additionalData
+                'additionalData' => $additionalData,
+                'form' => $form
             ]); ?>
 		<?php endforeach; ?>
     </div>
