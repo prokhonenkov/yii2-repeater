@@ -17,7 +17,7 @@
             'model' => $model,
             'id' => $id,
             'additionalData' => $additionalData,
-			'form' => $form
+			'form' => $form??null
 		]);?>
 	</div>
 </div>
