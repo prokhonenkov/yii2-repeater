@@ -23,9 +23,11 @@
                 'modelView' => $modelView,
                 'id' => $index,
                 'additionalData' => $additionalData,
+                'additionalClientData' => null,
                 'form' => $form
             ]); ?>
 		<?php endforeach; ?>
     </div>
+    <input type="hidden" class="additional-client-data">
     <a class="btn btn-primary new-item" href="javascript:;"><?= $btnNewTitle; ?></a>
 </div>

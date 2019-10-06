@@ -10,11 +10,18 @@ namespace prokhonenkov\repeater\controllers;
 
 use yii\web\Controller;
 
+/**
+ * Class RepeaterController
+ * @package prokhonenkov\repeater\controllers
+ */
 class RepeaterController extends Controller
 {
+	/**
+	 * @return string
+	 */
 	public function actionAddNew()
 	{
-		$moduleId = $className = $id = $modelView = $additionalData = null;
+		$moduleId = $className = $id = $modelView = $additionalData = $additionalClientData = null;
 		extract(\Yii::$app->request->post());
 
 		$model = new $className;
@@ -23,7 +30,8 @@ class RepeaterController extends Controller
 			'model' => $model,
 			'id' => $id,
 			'modelView' => $modelView,
-			'additionalData' => $additionalData
+			'additionalData' => $additionalData,
+			'additionalClientData' => $additionalClientData
 		]);
 	}
 }

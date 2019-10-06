@@ -7,12 +7,20 @@ use yii\helpers\VarDumper;
 use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
 
-
+/**
+ * Class Repeater
+ * @package prokhonenkov\repeater
+ */
 class Repeater extends \yii\base\Module
 {
-	public $repeaterItemView = '@vendor/prokhonenkov/yii2-repeater/src/widgets/views/_item';
-
+	/**
+	 * @var string
+	 */
 	private static $moduleId;
+	/**
+	 * @var string
+	 */
+	public $repeaterItemView = '@vendor/prokhonenkov/yii2-repeater/src/widgets/views/_item';
 
     public function init()
     {
@@ -22,9 +30,9 @@ class Repeater extends \yii\base\Module
     }
 
 	/**
-	 * @return mixed
+	 * @return string
 	 */
-	public static function getModuleId()
+	public static function getModuleId(): string
 	{
 		return self::$moduleId;
 	}

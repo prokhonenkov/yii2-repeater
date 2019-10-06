@@ -8,7 +8,10 @@
 
 namespace prokhonenkov\repeater\assets;
 
-
+/**
+ * Class AssetBundle
+ * @package prokhonenkov\repeater\assets
+ */
 class AssetBundle extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@vendor/prokhonenkov/yii2-repeater/assets';

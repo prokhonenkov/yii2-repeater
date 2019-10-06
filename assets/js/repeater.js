@@ -5,10 +5,10 @@
  */
 
 jQuery(function($){
-
     window.Repeater = function(options){
         var $el = $(options.id),
             $btnNew = $el.children('.btn.new-item'),
+            $additionalClientData = $el.children('.additional-client-data'),
             $wrap = $el.children('.list-items'),
             self = this;
 
@@ -18,6 +18,7 @@ jQuery(function($){
 
             postData[yii.getCsrfParam()] = yii.getCsrfToken();
             postData['id'] = self.id;
+            postData['additionalClientData'] = $additionalClientData.val();
 
             $.post(options.addNewUrl, postData, function(data){
                 $wrap.append($(data));

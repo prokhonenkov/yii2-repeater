@@ -12,36 +12,66 @@ use prokhonenkov\repeater\Repeater;
 use yii\base\Widget;
 use yii\helpers\Json;
 use yii\helpers\Url;
-use yii\helpers\VarDumper;
+use yii\widgets\ActiveForm;
 
+/**
+ * Class RepeaterWidget
+ * @package prokhonenkov\repeater\widgets
+ */
 class RepeaterWidget extends Widget
 {
-	private $id;
-
+	/**
+	 * @var string
+	 */
 	private $prefix = 'vp';
-
+	/**
+	 * @var string|int
+	 */
+	public $id;
+	/**
+	 * @var ActiveForm
+	 */
 	public $form;
-
+	/**
+	 * @var string
+	 */
 	public $className;
-
+	/**
+	 * @var array
+	 */
 	public $models = [];
-
+	/**
+	 * @var
+	 */
 	public $modelView;
-
+	/**
+	 * @var string
+	 */
 	public $addCallback;
-
+	/**
+	 * @var string
+	 */
 	public $removeCallback;
-
-	public $btnNewTitle = 'add new';
-
+	/**
+	 * @var string
+	 */
+	public $btnNewTitle = 'Add new';
+	/**
+	 * @var array
+	 */
 	public $additionalData = [];
 
 	public function init()
 	{
 		parent::init();
-		$this->id = md5(microtime());
+		if(!$this->id) {
+			$this->id = md5(microtime());
+		}
 	}
 
+	/**
+	 * @return string
+	 */
 	public function run()
 	{
 		AssetBundle::register($this->getView());

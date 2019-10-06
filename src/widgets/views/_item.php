@@ -9,6 +9,7 @@
 /** @var object $model */
 /** @var string $id */
 /** @var array $additionalData */
+/** @var mixed $additionalClientData */
 ?>
 <div class="repeater-item form-row form-flex grey-block" data-id="<?= $id; ?>">
 	<a class="remove" href="javascript:;">X</a>
@@ -17,6 +18,7 @@
             'model' => $model,
             'id' => $id,
             'additionalData' => $additionalData,
+            'additionalClientData' => $additionalClientData,
 			'form' => $form??null
 		]);?>
 	</div>
